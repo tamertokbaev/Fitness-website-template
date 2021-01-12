@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фитнес блог</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Присоединятесь к нашему сообществу прямо сейчас!</h3>
+                    <div class="reviews__wrapper reviews__wrapper_first">
+                        <img src="img/coachs/1.jpg" alt="first" class="reviews__img">
+                        <div class="reviews__review">
+                            <div class="reviews__name"><a href="https://www.instagram.com/kayla_itsines/">Кайли Итинс</a></div>
+                            <div class="reviews__count">Фитнес тренер</div>
+                            <div class="reviews__feedback">
+                                Кайла Итинс является настоящим лидером в мире фитнеса. Прежде чем стать королевой
+                                Instagram, она сначала сделала себе имя инструктором по фитнесу в Австралии. Она
+                                построила свою собственную империю, основанную на разнообразных программах упражнений и
+                                фитнесе, которые она предлагает. Одна из них - Bikini Body Guide (BBG) / Sweat With
+                                Kayla, широко известная программа, которая позволила тысячам женщин сформировать свое
+                                тело всего за несколько месяцев.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__line"></div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="reviews__wrapper reviews__wrapper_first">
+                        <img src="img/coachs/2.jpg" alt="first" class="reviews__img">
+                        <div class="reviews__review">
+                            <div class="reviews__name"><a href="https://www.instagram.com/tiboinshape/">Тибо</a></div>
+                            <div class="reviews__count">Спортивный тренер</div>
+                            <div class="reviews__feedback">
+                                Тибо - 23-летний француз, родом из Тулузы. Он известен своими советами по наращиванию
+                                мышечной массы и питанию. Он каждый день публикует сообщения на темы тренировок, набора
+                                массы и питания. Становясь все более популярным, он стал настоящим источником
+                                вдохновения
+                                для большого количества мужчин, а также для многих женщин.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__line"></div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="reviews__wrapper reviews__wrapper_first">
+                        <img src="img/coachs/3.jpg" alt="first" class="reviews__img">
+                        <div class="reviews__review">
+                            <div class="reviews__name"><a href="https://www.instagram.com/jenselter/">Джен Селтер</a></div>
+                            <div class="reviews__count">Фитнес тренер</div>
+                            <div class="reviews__feedback">
+                                Ее программа в основном основана на развитии и тонусе ног, живота и ягодиц. Она считает
+                                приседания лучшим упражнением для женщин, которые хотят привести в тонус ягодицы или
+                                увеличить мышечную силу ног. В рамках своего подхода к этому она демонстрирует различные
+                                формы упражнений на своих тренировках.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Зарегистрируйтесь прямо сейчас!</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Имя пользователя</label>
+                            <input type="text" class="form-control" placeholder="Ваш логин">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Электронная почта</label>
+                            <input type="email" class="form-control" placeholder="Введите почту">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль</label>
+                            <input type="password" class="form-control" placeholder="Ваш пароль">
+                        </div>
+                        <div class="form-group">
+                            <label>Подтверждение пароля</label>
+                            <input type="password" class="form-control" placeholder="Повторите пароль">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Получать новости и оповещения о
+                                нововведениях и изменениях в портале</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info btn-block">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

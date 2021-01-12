@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес блог</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+</head>
+<body>
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="training">
+        <div class="container">
+            <h2 class="">Упражнения на повышение мышечной массы</h2>
+            <p> Физическая нагрузка является ключом к красивому, здоровому телу. Видов тренировок становится все больше, в их многообразии не всегда легко сориентироваться.</p>
+            <p>В данной странице вы можете увидеть разновидности упражнений для тренировок</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            1. Отжимания от пола
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/otjimaniya-1.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для разминки и подготовки грудных мышц к тренировке. Варьируйте различные типы и ширину постановки рук, а также используйте подставку под ноги для усложнения. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            2. Сведения на грудь
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/svedeniya-na-grud.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение выполняется со средним рабочим весом, контролем за техникой и полным ощущением вовлечения грудных мышц в работу. Старайтесь как можно сильнее напрячь и свести грудь внутрь, выставляя руки вперед — но не фиксируя при этом локти. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            3. Жим штанги лежа
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/jim-shtangi-leja.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Базовое упражнение для мышц груди. Может выполняться как со штангой, так и в тренажере для жима. При выполнении на горизонтальной скамье не поднимайте ноги вверх. Опционально каждую неделю можно варьировать наклон скамьи. 3-4 подхода по 7-10 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            4. Подъемы штанги на бицепс
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/shtanga-na-biceps.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Ключевое упражнение для развития мышц бицепса. При выполнении используйте средний вес, позволяющий выполнить до 15 повторов. Не раскачивайтесь при подъеме штанги и держите локти в одной и той же точке. 2-3 подхода по 12-15 повторений.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            5. Концентрированный подъем на бицепс
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/podyem-na-biceps-1.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Постоянно следите за тем, чтобы чувствовать работу бицепса. За счет легкого поворота гантели в работу включается внутренняя часть бицепса — при увеличении размера она выталкивает основную мышцу вверх, придавая ей объем. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            6. Приседания со штангой
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/prisedaniya-so-shtangoy.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Базовое упражнение для мышц ног. Может выполняться как со штангой, так и в тренажере для жима ногами. При выполнении держите пресс в осознанном напряжении, опускаясь до точки, в которой бедра параллельны полу. 3-4 подхода по 7-10 повторений.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            7. Разгибания ног в тренажере
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/razgibaniya-nog-v-trenajere.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для прицельной прокачки передней поверхности бедра. При выполнении также следите за тем, чтобы пресс оставался в осознанном напряжении. Не помогайте себе поднимать вес за счет выгибания корпуса. Может быть заменено на другое упражнение на ноги. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            8. Выпады
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/vypady.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для проработки средней ягодичной мышцы. Допустимо выполнение как с весом тела, так и с гантелями. Опционально могут быть заменены на любое другое упражнение для ягодиц. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            9. Обратные отжимания на скамье
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/otjimaniya-na-triceps.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для разминки верхней части тела и подготовки суставов к работе. Может выполняться как от земли, так и на двух скамьях — отжимания на брусьях также допустимы. В верхней точке старайтесь вытолкнуть вес тела как можно выше. 2-3 подхода по 12-15 повторений.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            10. Подъемы гантелей в стороны
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/podyemy-ganteley-v-storony.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для средней части дельтовидных мышц. При выполнении используйте средний вес гантелей и контролируйте неподвижное положение корпуса. Спина должна быть прямой, руки не должны сгибаться в локтях. Поднимайте вес до горизонтали. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            11. Подъемы гантелей перед собой
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/poperemennie-podyemy.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для передней части дельтовидных мышц. Также используйте средний вес гантелей и следите за техникой. Начинайте поднимать руку только тогда, когда противоположная рука находится в нижней точке движения. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            12. Жим гантелей сидя
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/jim-ganteley-sidya.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Базовое упражнение для мышц плеч. Может выполняться либо с гантелями (как сидя на скамье, так и стоя), либо со штангой — жим штанги стоя. При выполнении держите пресс в осознанном напряжении, при подъеме веса вверх не выталкивайте его за счет силы корпуса — работают только плечи. 3-4 подхода по 7-10 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            13. Обратные разгибания на трицепс
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/obratnie-razgibaniya-na-triceps.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для средней головки трицепса, придающее мышце объем. Может выполняться как с гантелей на скамье, так и в тренажере с веровкой (корпус при этом строго перпендикулярен полу). Совершайте медленные движения, в финальной точке движения напрягая трицепс еще сильнее. 2-3 подхода по 12-15 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            14. Жим на трицепс из-за головы
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/jim-na-triceps-iz-za-golovy.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Ключевое упражнение для развития трицепса. Может выполняться как сидя на скамье, так и лежа на скамье (с EZ-штангой). Локти должны быть параллельны друг другу и не должны уходить в сторону при движении веса. Может быть заменено на другое упражнение на трицепс. 3-4 подхода по 7-10 повторений
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training__exercise">
+                        <div class="training__name">
+                            15. Подъемы гантелей через стороны
+                        </div>
+                        <div class="training__wrapper">
+                            <div class="training__img">
+                                <img src="img/training/razvedeniya-cherez-storony.jpg" alt="">
+                            </div>
+                            <div class="training__descr">
+                                Упражнение для проработки трапециевидной и средней дельтовидной мышцы. При подъеме гантелей локти слегка согнуты, движение по полуокружности. Следите за тем, чтобы поясница не выгибалась. 3-4 подхода по 7-10 повторений
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

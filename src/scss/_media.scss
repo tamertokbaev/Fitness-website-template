@@ -1,0 +1,376 @@
+@media (max-width: 1200px){
+    .nav{
+        &__form{
+            width: 300px;
+        }
+        &__account-panel{
+            justify-content: space-around;
+        }
+        &__contact{
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    .subheader{
+        &__menu{
+            padding-left: 0;
+        }
+        &__link{
+            font-size: 14px;
+            padding: 0 22px;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+    .contacts{
+        &__wrapper{
+            iframe{
+                width: 450px;
+            }
+            justify-content: space-evenly;
+        }
+    }
+    .footer{
+        &__wrapper > div{
+            width: 50%;
+            &:nth-child(1){
+                width: 25%;
+            }
+            &:nth-child(3){
+                width: 25%;;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        &__mobile{
+            display: flex;
+            a{
+                margin: 0 3px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .nav{
+        &__logo{
+            font-size: 12px;
+            padding-right: 10px;
+            img{
+                width: 30px;
+            }
+        }
+        &__search{
+            width: 75%;
+        }
+        &__register{
+            font-size: 11px;
+        }
+        &__contact{
+            width: 100px;
+        }
+        &__questions{
+            margin-left: 0;
+            font-size: 14px;
+        }
+        &__number{
+            font-size: 11px;
+        }
+    }
+    .subheader{
+        &__link{
+            font-size: 12px;
+            padding: 0 12px;
+        }
+        a{
+            font-size: 12px;
+        }
+    }  
+    .advantages{
+        &__item{
+            width: 250px;
+            &_header{
+                font-size: 14px;
+            }
+            &_text{
+                font-size: 12px;
+            }
+        }
+    }
+    .diets{
+        &__img{
+            width: 75%;
+            img{
+                height: 400px;
+            }
+        }
+        &__video{
+            width: 75%;
+            iframe{
+                height: 300px;
+            }
+        }
+    }
+    .contacts{
+        &__wrapper{
+            iframe{
+                width: 350px;
+                height: 350px;
+            }
+        }
+        &__text{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+    .footer{
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__wrapper > div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            &:nth-child(1){
+                width: 100%;
+            }
+            &:nth-child(3){
+                width: 100%;;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .nav{
+        display: none;
+        width: 100%;
+        padding-top: 10px;
+        min-height: 0;
+        height: 69px;
+        background-color: $base-color;
+        &__contact{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &__questions{
+            text-align: right;
+        }
+        &__number{
+            text-align: right;
+        }
+        
+    }
+
+    .subheader{
+        position: fixed;
+        height: 69px;
+        background-color: $base-color;
+        .container{
+            height: 0;
+        }
+        &__menu{
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            margin: 0;
+            top: 0;
+            right: -100%;
+            width: 60%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: $base-color;
+            z-index: 5;
+            transition: 0.6s all;
+            &_active {
+                right: 0;
+            }
+        }
+        &__item{
+            width: 100%;
+            float: none;
+            line-height: 20px;
+        }
+        &__link{
+            text-align: left;
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            color: white;
+        }
+        .media_hidden{
+            display: block;
+            .nav__form{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .nav__search{
+                width: 100%;
+            }
+            .nav__submit{
+                left: -4px;
+            }
+            .nav__signin{
+                color: white;
+            }
+            .nav__register{
+                color: white;
+            }
+        }
+        .hamburger{
+            top: 50%;
+            display: block;
+            position: absolute;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 24px;
+            left: 10px;
+            span{
+                background-color: black;
+                display: block ;
+                height: 4px;
+                width: 70% ;
+                margin-bottom: 4px;
+                transition: 0.5s all;
+            }
+            &_active{
+                span{
+                    margin-bottom: -4px; 
+                    &:nth-child(1){
+                        transform: translateY(6px) rotate(-45deg);}
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(6px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    .sm-hidden{
+        display: none;
+    }
+    .advantages{
+        &__item{
+            &_header{
+                font-size: 17px;
+            }
+            &_text{
+                font-size: 15px;
+            }
+        }
+    }
+    .diets{
+        margin-top: 70px;
+        &__header{
+            font-size: 26px;
+            width: 80%;
+        }
+        &__subheader{
+            width: 80%;
+            font-size: 18px;
+        }
+        &__img{
+            width: 100%;
+            img{
+                height: 400px;
+            }
+        }
+        &__video{
+            width: 100%;
+            iframe{
+                height: 300px;
+            }
+        }
+        &__time{
+            font-size: 16px;
+        }
+        &__item{
+            font-size: 14px;
+        }
+    }
+    .training{
+        margin-top: 70px;
+        &__name{
+            font-size: 18px;
+        }
+        &__descr{
+            margin-left: 15px;
+            font-size: 13px;
+        }
+        &__img{
+            height: 200px;
+        }
+    }
+    .contacts{
+        &__wrapper{
+            flex-direction: column-reverse;
+            iframe{
+                width: 100%;
+            }
+            &:nth-child(2){
+                flex-direction: column;
+            }
+        }
+    }
+
+    .advertisement{
+        &__img{
+            width: 400px;
+            height: 200px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    }
+
+    .feedback{
+        &__text{
+            font-size: 14px;
+        }
+        &__author{
+            font-size: 16px;
+        }
+    }
+
+    .footer{
+        padding: 25px 0 20px 0;
+        &__divider{
+            width: 250px;
+            margin: 0 auto;
+        }
+        &__wrapper{
+            padding-top: 22px;
+        }
+        &__wrapper > div{
+            margin-bottom: 20px;
+        }
+        &__links{
+            width: 320px;
+            &_main{
+                padding: 0;
+                font-size: 14px;
+            }
+            &_sub{
+                flex-wrap: wrap;
+                justify-content: center;
+                a{
+                    margin: 0 7px;
+                }
+            }
+            &_lang{
+                margin-top: 10px;
+            }
+        }
+    }
+}

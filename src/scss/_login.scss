@@ -1,0 +1,43 @@
+.chooseus{
+    margin-top: 169px;
+    padding: 50px 0;
+    &__header{
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+        width: 85px;
+        height: 85px;
+    }
+    &__heading{
+        margin-top: 38px;
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__description{
+        width: 250px;
+        text-align: center;
+        margin-top: 25px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 400;
+        a{
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+}
+
+.login{
+    padding: 30px 0;
+}

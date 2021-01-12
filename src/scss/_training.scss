@@ -1,0 +1,34 @@
+.training{
+    margin-top: 169px;
+    padding: 50px 0;
+    &__exercise{
+        margin: 20px 0;
+        border-radius: 4px;
+        background-color: #EBEBEB;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    &__name{
+        font-family: 'San Francisco Pro Display Bold';
+        font-size: 22px;
+    }
+    &__wrapper{
+        display: flex;
+        margin-top: 10px;
+    }
+    &__img{
+        margin-left: 5px;
+        width: 600px;
+        height: 400px;
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    &__descr{
+        width: 400px;
+        margin-left: 30px;
+        font-family: 'San Francisco Pro Display Medium';
+        font-size: 18px;
+    }
+}

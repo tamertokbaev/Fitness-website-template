@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contacts">
+        <div class="container pt-5">
+            <h3 class="text-center">Местные фитнес центры</h3>
+            <div class="row">
+                <div class="col-md-12" style="position:relative;overflow:hidden;">
+                    <div class="contacts__wrapper">
+                        <iframe src="https://yandex.kz/map-widget/v1/-/CCUEENRZ8C" width="560" height="400"
+                            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        <div class="contacts__text">
+                            <span>Iron Club</span> <br>
+                            Наши плюсы: <br>
+                            • профессиональное оборудование; <br>
+                            • тренажёрный зал для всех — от новичков до профессионалов; <br>
+                            • гантельный ряд с шагом в 1 кг — от 1 до 45 кг; <br>
+                            • просторные раздевалки; <br>
+                            • душевые кабины; <br>
+                            • профессиональные тренеры; <br>
+                            • удобное месторасположение; <br>
+                            • большая парковка; <br>
+                            • доступные цены. <br>
+                            А также у нас вы можете сразу приобрести спортивное питание по низким ценам.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" style="position:relative;overflow:hidden;">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__text">
+                            <span>Fitness first</span><br>
+                            Наши клиенты выбирают Fitness First уже на протяжении 10 лет! <br>
+                            Рассрочка от Альфа-банка! <br>
+                            Годовой абонемент от 80 000 тг.Активный отдых - это к нам!<br>
+                            При продлении клубных карт по тарифу «Базовая» и «Дневная » предусмотрены скидки
+                        </div>
+                        <iframe src="https://yandex.kz/map-widget/v1/-/CCUEENEOsA" width="560" height="400"
+                            frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-12" style="position:relative;overflow:hidden;">
+                    <div class="contacts__wrapper">
+                        <iframe src="https://yandex.kz/map-widget/v1/-/CCUEE4GBDA" width="560" height="400"
+                            frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
+                        <div class="contacts__text">
+                            <span>Champion Gym.</span> <br>
+                            Сеть фитнес-клубов на правом и левом берегу с финскими саунами и парной баней!
+                            Клуб с уютным лофт-интерьером на левом берегу и хардкорный зал на правом.
+                            Жми на кнопку в описании и переходи в вотсап для записи на пробную тренировку!
+                            Открылись групповые занятия для детей: хореография + балет на Жамбыла, 8!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

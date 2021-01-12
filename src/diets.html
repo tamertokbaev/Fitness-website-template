@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="diets">
+        <h1 class="diets__header">Диеты - самый важный элемент в эффективных тренировках</h1>
+        <h5 class="diets__subheader">Не все диеты являются безопасными и эффективными. В данной странице мы вас
+            расскажем какие диеты помогут вам добиться ваших целей по настоящему.</h5>
+        <div class="container">
+            <div class="row">
+                <div class="diets__img">
+                    <img src="img/diets/diet_main.jpg" alt="">
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <div class="diets__wrapper">
+                        <h3>1. Белковая диета для похудения</h3>
+                        <div class="diets__time">1. Завтрак</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">два яйца вареных, чай без сахара</li>
+                            <li class="diets__item">кофе черный, творог</li>
+                            <li class="diets__item">два яйца, кофе или чай</li>
+                            <li class="diets__item">яблоко, творог, чай</li>
+                            <li class="diets__item">кусочек цельнозернового хлеба, омлет из белков 3 яиц, кофе</li>
+                        </ul>
+                        <div class="diets__time">2. Обед</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">200 гр нежирной говядины, салат из свежей моркови</li>
+                            <li class="diets__item">200 гр нежирной рыбы, спаржа на пару</li>
+                            <li class="diets__item">нежирная говядина 200 гр, тушеные кабачки</li>
+                            <li class="diets__item">салат из свежей моркови, отварная куриная грудка 200 гр</li>
+                            <li class="diets__item">капустный салат, нежирная рыба 200 гр</li>
+                        </ul>
+                        <div class="diets__time">3. Ужин</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">фруктовый салат, заправленный йогуртом</li>
+                            <li class="diets__item">кусочек сыра, стакан томатного сока</li>
+                            <li class="diets__item">салат из помидоров и огурцов, кусочек сыра</li>
+                            <li class="diets__item">тушеная фасоль, индейка 100 гр</li>
+                            <li class="diets__item">стакан томатного сока, кусочек сыра</li>
+                        </ul>
+                        <div class="diets__time">4. Перед сном</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">стакан кефира</li>
+                            <li class="diets__item">стакан йогурта без добавок</li>
+                            <li class="diets__item">стакан простокваши</li>
+                            <li class="diets__item">стакан йогурта</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diets__video">
+                    <iframe height="540" src="https://www.youtube.com/embed/wV0x9igFY0s" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <div class="diets__wrapper">
+                        <h3>2. Диета для набора мышечной массы</h3>
+                        <div class="diets__time">1. Завтрак</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">кукурузная каша на молоке (100 граммов сухой крупы)</li>
+                            <li class="diets__item">сливочное масло (1 чайная ложка);</li>
+                            <li class="diets__item">яичница-глазунья из 1 яйца и 2-х белков;</li>
+                            <li class="diets__item">молоко (200 мл);</li>
+                            <li class="diets__item">тост из зернового хлеба</li>
+                        </ul>
+                        <div class="diets__time">2. Второй завтрак</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">любые орехи (30 граммов);</li>
+                            <li class="diets__item">груша (1 штука);</li>
+                            <li class="diets__item">сладости (мармелад, зефир – не более 100 граммов).</li>
+                        </ul>
+                        <div class="diets__time">3. Обед</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">каша перловая на воде (100 граммов сухой крупы);</li>
+                            <li class="diets__item">гуляш из говядины (200 граммов);</li>
+                            <li class="diets__item">овощной салат (150 граммов);</li>
+                            <li class="diets__item">ломтик ржаного хлеба.</li>
+                        </ul>
+                        <div class="diets__time">4. Ужин</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">куриная грудка (200 граммов);</li>
+                            <li class="diets__item">рис (100 граммов);</li>
+                            <li class="diets__item">консервированные овощи (150 граммов)</li>
+                        </ul>
+                        <div class="diets__time">5. Перед сном</div>
+                        <ul class="diets__list">
+                            <li class="diets__item">нежирный творог (150 граммов)</li>
+                            <li class="diets__item">рис (100 граммов);</li>
+                            <li class="diets__item">стакан ряженки</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diets__video">
+                    <iframe height="538" src="https://www.youtube.com/embed/Fhz7txXPAmQ" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator">
+        <div class="container">
+            <div class="row">
+                <h3 class="mb-4 text-center">Рассчитай количество ежедневного употребления калории для твоего организма!
+                </h3>
+                <div class="col-md-10 offset-md-1 mb-3">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <input type="number" class="form-control mb-3" id="weight" placeholder="Введите ваш вес"
+                                    required>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" class="form-control mb-3" id="height"
+                                    placeholder="Введите ваш рост" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" class="form-control mb-3" id="age"
+                                    placeholder="Введите ваш возраст" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info btn-block" id="submit_btn">Рассчитать</button>
+                    </form>
+                </div>
+                <div class="col-md-10 offset-md-1" style="display: none;" id="hide">
+                    <p>Ваш суточный показатель нормы: <span id="result"></span> калории</p>
+                    Важно: увидеть точную индивидуальную суточную норму можно, если умножить окончательный результат на показатель физической нагрузки. Эта величина составляет 1,2 при самом минимальном уровне активности, 1,9 – при максимальном, характерном для спортсменов. При средней нагрузке она равна примерно 1,4.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

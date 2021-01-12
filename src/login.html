@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фитнес блог</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chooseus">
+        <div class="container">
+            <div class="row">
+                <h3 class="chooseus__header">Войдите в систему, чтобы получить доступ ко всем возможностям!</h3>
+                <div class="chooseus__wrapper">
+                    <div class="chooseus__wrapper-item">
+                        <img src="img/login/experience.svg" alt="" class="chooseus__img">
+                        <div class="chooseus__heading">
+                            Делимся опытом
+                        </div>
+                        <div class="chooseus__description">
+                            Наши сотрудники всегда готовы поделиться своим опытом, 
+                            так как сами занимаются профессионально спортом и продвигают здоровый образ жизни    
+                        </div>
+                    </div>  
+                    <div class="chooseus__wrapper-item">
+                        <img src="img/login/healthcare.svg" alt="" class="chooseus__img">
+                        <div class="chooseus__heading">
+                            Заботимся о здоровье
+                        </div>
+                        <div class="chooseus__description">
+                            Мы работаем для того, 
+                            чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                        </div>
+                    </div> 
+                    <div class="chooseus__wrapper-item">
+                        <img src="img/login/workout.svg" alt="" class="chooseus__img">
+                        <div class="chooseus__heading">
+                            Подбираем тренировки
+                        </div>
+                        <div class="chooseus__description">
+                            Присоеденившись к нашему сообществу, вы можете получить индивидуальный план по тренировкам и питанию   
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h4>Введите ваши данные:</h4>
+                    <form>
+                        <div class="form-group">
+                            <label>Имя пользователя</label>
+                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Ваш логин">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль</label>
+                            <input type="password" class="form-control" placeholder="Ваш пароль">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info btn-block">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

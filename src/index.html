@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес блог</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <!-- Шапка сайта, вместе с меню -->
+    <header id="site-header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 sm-hidden">
+                        <div class="nav__logo">
+                            Фитнес-блог
+                            <img src="img/dumbbell.svg" alt="nav__icon" class="nav__icon">
+                        </div>
+                    </div>
+                    <div class="col-md-4 sm-hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-xl-3 sm-hidden">
+                        <div class="nav__account-panel">
+                            <div class="nav__identify">
+                                <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                                <div class="nav__wrapper-item">
+                                    <a href="login.html" class="nav__signin">Войти</a>
+                                    <a href="signup.html" class="nav__register">Нет аккаунта?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xl-3 sm-hidden">
+                        <div class="nav__contact">
+                            <div class="nav__questions">
+                                Есть вопросы?
+                            </div>
+                            <div class="nav__number">
+                                +7 707 1010 865
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="subheader">
+            <div class="container subheader_container">
+                <ul class="subheader__menu">
+
+                    <li class="media_hidden">
+                        <form action="post" class="nav__form">
+                            <input type="search" class="nav__search" placeholder="Что вы ищете?">
+                            <button class="nav__submit" type="submit">
+                                <img src="img/search.svg" alt="search">
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="subheader__item"><a href="index.html" class="subheader__link">Главная</a></li>
+                    <li class="subheader__item">
+                        <div class="dropdown">
+                            <a href="#" class="subheader__link dropdown-link">Программы тренировок</a>
+                            <div class="dropdown-content">
+                                <a href="#">Для набор массы</a>
+                                <a href="#">Для похудения</a>
+                                <a href="#">Тройной сплит</a>
+                                <a href="#">Смешанное</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subheader__item"><a href="diets.html" class="subheader__link">Диеты</a></li>
+                    <li class="subheader__item"><a href="training.html" class="subheader__link">Упражнения</a></li>
+                    <li class="subheader__item"><a href="contacts.html" class="subheader__link">Контакты</a></li>
+
+                    <li class="media_hidden">
+                        <div class="nav__identify">
+                            <img src="img/user.png" alt="nav__avatar" class="nav__img">
+                            <div class="nav__wrapper-item">
+                                <a href="#" class="nav__signin">Войти</a>
+                                <a href="#" class="nav__register">Нет аккаунта?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Слайдер с изображениями -->
+    <section class="slider sm-hidden">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h1 class="main_title">Мы за здоровый образ жизни!</h1>
+            <h2 class="advantages__subheader">4 причины начать заниматься спортом!</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__icon"><img src="img/advantages/heart.png" alt="advantages_icon"></div>
+                        <div class="advantages__item">
+                            <div class="advantages__item_header">Крепкое здоровье и иммунитет</div>
+                            <div class="advantages__item_text">У людей, занимающихся спортом (даже у непрофессиональных
+                                спортсменов) здоровье в разы крепче, чем у не занимающихся им. И это не просто так:
+                                занятия спортом усиливают сердце, нормализуют кровяное давление, благотворно
+                                воздействуют на работу всех жизненно важных систем организма, а также улучшают мозговую
+                                активность и замедляют процессы старения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__icon"><img src="img/advantages/muscles.png" alt="advantages_icon"></div>
+                        <div class="advantages__item">
+                            <div class="advantages__item_header">Спорт укрепляет веру себя и свои силы, повышает
+                                самооценку,</div>
+                            <div class="advantages__item_text">Спорт укрепляет веру себя и свои силы, повышает
+                                самооценку, развивает волю, делает человека сильнее как личность. Ведь во многих случаях
+                                тренировки тесно взаимосвязаны с преодолением своих слабостей, работой на пределе своих
+                                возможностей.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__icon"><img src="img/advantages/trophy.png" alt="advantages_icon"></div>
+                        <div class="advantages__item">
+                            <div class="advantages__item_header">Хорошее настроение, обеспечиваемое занятиями спортом.
+                            </div>
+                            <div class="advantages__item_text">После физических упражнений человек практически всегда
+                                чувствует прилив сил, пусть даже он устал физически; его моральный дух на высоте,
+                                психическое состояние – прекрасное, жизненный тонус максимально активизирован.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__icon"><img src="img/advantages/weightlifter.png" alt="advantages_icon">
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item_header">Насыщение организма кислородом</div>
+                            <div class="advantages__item_text">Во время выполнения различного рода упражнений организм
+                                человека начинает потреблять большее количество кислорода, тем самым насыщая им все свои
+                                клетки. А это улучшает кровообращение и работу капилляров, а также исключительно
+                                благоприятно сказывается на реакции, рефлексах и работе мышц.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advertisement">
+        <h2 class="main_title">Почему вы должны выбрать нас?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="advertisement__name">
+                        Мы подберем для вас питание и правильный сон
+                    </div>
+                    <div class="advertisement__wrapper">
+                        <div class="advertisement__img">
+                            <img src="img/advertisement/sleep.jpg" alt="">
+                        </div>
+                        <div class="advertisement__text">
+                            Вне зависимости от вашего предпочтения в фигуре следует помнить, что для здорового образа жизни необходимо находиться в центре равностороннего треугольника. Его вершины –  двигательная активность, сбалансированное питание и здоровый сон. Мы подберем для вас правильное питание, правильный режим сна.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="advertisement__name">
+                        Мы покажем вам как правильно тренироваться
+                    </div>
+                    <div class="advertisement__wrapper">
+                        <div class="advertisement__img">
+                            <img src="img/advertisement/powerlifting.gif" alt="">
+                        </div>
+                        <div class="advertisement__text">
+                            Регулярная нагрузка позволяет сделать мышцы более выносливыми и оптимально расходующими энергию. Кроме того, отдельные виды нагрузки позволяют увеличить объем мышц и их силу. Но только при правильной технике ваша тренировка будет давать результат. Мы покажем вам наглядно как нужно правильно тренироваться.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <h2 class="main_title">Наши отзывы</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__text">
+                            Начинал заниматься – весил 56 кг при росте 184 см. По данной программе и большому количеству калорий за 3 месяца получилось набрать до 64 кг. Вроде бы неплохо, масса продолжает расти.
+                        </div>
+                        <div class="feedback__author">
+                            Станислав
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__text">
+                            Занимаюсь чуть больше месяца с тренером. Хронический дрыщ – рост 195, вес был 71. Сейчас уже 75. Итого за месяц примерно 4 кг.
+                        </div>
+                        <div class="feedback__author">
+                            Biomax
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__text">
+                            При росте 191 и весе 74 кг за месяц набрал 6 кг с 2 банок гейнера, 1 рулс, калия оротат и креатин моногидрат. Пацаны, программа рабочая, всё ясно и понятно.
+                        </div>
+                        <div class="feedback__author">
+                            Марат
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h4>Оставьте ваш отзыв</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваш отзыв</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-block">Оставить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assistent" id="assistent">
+        <div class="assistent__wrapper sm-hidden">
+            <button class="assistent__button" id="assistent_button">
+                <img src="img/close.svg" width="15px" height="15px" alt="">
+            </button>
+            <div class="assistent__name">
+                <div class="assistent__status"></div>
+                <div class="assistent__author">Онлайн ассистент</div>
+            </div>
+            <div class="assistent__message">
+                <div class="assistent__img">
+                    <img src="img/camera_200.png" alt="">
+                </div>
+                <div class="assistent__text">
+                    У вас есть вопросы?
+                </div>
+            </div>
+            <textarea class="assistent__textarea" placeholder="Введите ваш вопрос:"></textarea>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divider"></div>
+        <div class="footer__wrapper">
+            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
+            <div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/twitter.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social_item">
+                        <img src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__links">
+                    <div class="footer__links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">контакты</a>
+                        <a href="#">сотрудничество</a>
+                    </div>
+                    <div class="footer__links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer__links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer__mobile">
+                    <a href="#">
+                        <img src="img/footer/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/footer/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/assistent.js"></script>
+</body>
+
+</html>
